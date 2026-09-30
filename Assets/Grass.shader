@@ -136,7 +136,7 @@ Shader "Roystan/Grass With Interaction"
         return offset;
     }
 
-    [maxvertexcount(BLADE_SEGMENTS * 2 - 1)]
+    [maxvertexcount(BLADE_SEGMENTS * 2 + 1)]
     void geo(triangle vertexOutput IN[3] : SV_POSITION, inout TriangleStream<geometryOutput> triStream) {
         float3 pos = IN[0].vertex;
 
